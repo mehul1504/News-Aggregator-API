@@ -9,12 +9,12 @@ To set up and run the News Aggregator API locally, follow these steps:
 1. **Clone the Repository**: 
    ```bash
    git clone https://github.com/mehul1504/news-aggregator-api.git
-
+```
 ## Install Dependencies:
 ```bash
 cd news-aggregator-api
 npm install
-
+```
 
 
 
@@ -36,7 +36,7 @@ The News Aggregator API provides the following endpoints:
 The API includes unit tests to ensure its functionality. To run the tests, use the following command:
 ```bash
 npm test
-
+```
 
 ## Dependencies
 
