@@ -9,17 +9,12 @@ To set up and run the News Aggregator API locally, follow these steps:
 1. **Clone the Repository**: 
    ```bash
    git clone https://github.com/mehul1504/news-aggregator-api.git
-```
+   ```
 ## Install Dependencies:
 ```bash
 cd news-aggregator-api
 npm install
 ```
-
-
-
-
-
 
 ## Endpoints
 
@@ -48,5 +43,3 @@ The News Aggregator API relies on the following dependencies:
 - **dotenv**: Load environment variables from.env file
 - **axios**: HTTP client for making requests to external APIs
 - **tap**: Test runner for unit testing
-
-
