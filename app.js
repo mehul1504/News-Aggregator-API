@@ -1,17 +1,12 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const authRoutes = require('./routes/authRoutes');
+const newsRoutes = require('./routes/newsRoutes');
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
-app.listen(port, (err) => {
-    if (err) {
-        return console.log('Something bad happened', err);
-    }
-    console.log(`Server is listening on ${port}`);
-});
+app.use('/users', authRoutes);
+app.use('/news', newsRoutes);
 
-
-
-module.exports = app;
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
